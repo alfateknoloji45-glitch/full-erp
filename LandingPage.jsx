@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { signup } from '../frontend/src/api/odooApi.js';
+// Updated import path to use the new src/api/odooApi.js module
+import { signup } from './src/api/odooApi.js';
 import { toast } from 'react-hot-toast';
 
 export default function LandingPage() {
