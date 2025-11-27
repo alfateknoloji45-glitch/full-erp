@@ -1,5 +1,6 @@
+// Import path fix: Updated from '../frontend/src/api/odooApi.js' to './src/api/odooApi.js'
 import React, { useState } from 'react';
-import { signup } from '../frontend/src/api/odooApi.js';
+import { signup } from './src/api/odooApi.js';
 import { toast } from 'react-hot-toast';
 
 export default function LandingPage() {

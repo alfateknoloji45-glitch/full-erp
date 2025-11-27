@@ -1,0 +1,22 @@
+# Node.js dependencies
+node_modules/
+
+# Build artifacts
+dist/
+
+# IDE/Editor directories
+.idea/
+.vscode/
+
+# Environment files (keep .env.example tracked)
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
