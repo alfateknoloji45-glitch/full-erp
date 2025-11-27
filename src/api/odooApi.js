@@ -110,7 +110,9 @@ export async function signup(email) {
 export async function checkSubdomainAvailable(subdomain) {
   try {
     const response = await api.get(`/subdomains/check/${subdomain}`);
-    return response.data?.available ?? true;
+    // Explicitly check if available is a boolean, default to true otherwise
+    const available = response.data?.available;
+    return typeof available === 'boolean' ? available : true;
   } catch (error) {
     // Default to available if check fails
     console.warn('Subdomain check failed, assuming available:', error.message);
