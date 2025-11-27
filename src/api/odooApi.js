@@ -6,7 +6,7 @@
  */
 import axios from 'axios';
 
-// Use REACT_APP_API_URL env variable or fall back to '/api'
+// Use VITE_API_URL env variable or fall back to '/api'
 const API_BASE = typeof import.meta !== 'undefined' && import.meta.env?.VITE_API_URL 
   ? import.meta.env.VITE_API_URL 
   : '/api';
