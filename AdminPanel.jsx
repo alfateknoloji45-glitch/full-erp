@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { getCompanies, updateCompanyStatus, updateCompanyPlan, deleteCompany } from '../frontend/src/api/odooApi.js';
+// Updated import path to use the new src/api/odooApi.js module
+import { getCompanies, updateCompanyStatus, updateCompanyPlan, deleteCompany } from './src/api/odooApi.js';
 import { toast } from 'react-hot-toast';
 
 export default function AdminPanel() {

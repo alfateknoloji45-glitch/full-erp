@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { toast } from 'react-hot-toast';
-import { checkSubdomainAvailable, createCompany as apiCreateCompany } from '../frontend/src/api/odooApi.js';
+// Updated import path to use the new src/api/odooApi.js module
+import { checkSubdomainAvailable, createCompany as apiCreateCompany } from './src/api/odooApi.js';
 
 export default function CompanySetup() {
   const [step, setStep] = useState(1);
