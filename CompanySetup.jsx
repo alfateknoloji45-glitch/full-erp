@@ -1,6 +1,7 @@
+// Import path fix: Updated from '../frontend/src/api/odooApi.js' to './src/api/odooApi.js'
 import React, { useState } from 'react';
 import { toast } from 'react-hot-toast';
-import { checkSubdomainAvailable, createCompany as apiCreateCompany } from '../frontend/src/api/odooApi.js';
+import { checkSubdomainAvailable, createCompany as apiCreateCompany } from './src/api/odooApi.js';
 
 export default function CompanySetup() {
   const [step, setStep] = useState(1);

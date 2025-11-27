@@ -1,5 +1,6 @@
+// Import path fix: Updated from '../frontend/src/api/odooApi.js' to './src/api/odooApi.js'
 import React, { useEffect, useState } from 'react';
-import { getCompanies, updateCompanyStatus, updateCompanyPlan, deleteCompany } from '../frontend/src/api/odooApi.js';
+import { getCompanies, updateCompanyStatus, updateCompanyPlan, deleteCompany } from './src/api/odooApi.js';
 import { toast } from 'react-hot-toast';
 
 export default function AdminPanel() {
